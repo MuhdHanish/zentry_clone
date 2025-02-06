@@ -13,8 +13,8 @@ body {
 
 @layer base {
     @font-face {
-        font-family: 'circluar-web';
-        src: url('./fonts/circluar-web.woff2') format('woff2');
+        font-family: 'circular-web';
+        src: url('./fonts/circular-web.woff2') format('woff2');
     }
 
     @font-face {
