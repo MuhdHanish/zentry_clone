@@ -19,6 +19,7 @@ export const Button = ({
         <button
             id={id}
             className={clsx("group relative z-10 w-fit cursor-pointer overflow-hidden rounded-full px-7 py-3 text-black", `${containerClass || ''}`)}
+            type="button"
         >
 
             {leftIcon && leftIcon}
