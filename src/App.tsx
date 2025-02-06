@@ -1,7 +1,8 @@
 import {
   Hero,
   About,
-  NavBar
+  NavBar,
+  Features
 } from "./components"
 
 export const App = () => {
@@ -10,6 +11,7 @@ export const App = () => {
       <NavBar />
       <Hero />
       <About />
+      <Features /> 
     </main>
   )
 }
