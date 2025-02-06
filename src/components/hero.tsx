@@ -80,7 +80,7 @@ export const Hero = () => {
     const handleVideoLoad = () => setLoadedVideos((prevLoaded) => prevLoaded + 1);
 
     return (
-        <div className="relative h-dvh w-screen overflow-x-hidden">
+        <section className="relative h-dvh w-screen overflow-x-hidden">
             {loading && (
                 <div className="flex-center absolute z-[100] h-dvh w-screen overflow-hidden bg-violet-50">
                     <div className="three-body">
@@ -151,6 +151,6 @@ export const Hero = () => {
             <h1 className="special-font hero-heading absolute bottom-5 right-5 text-black">
                 G<b>a</b>ming
             </h1>
-        </div>
+        </section>
     )
 }
