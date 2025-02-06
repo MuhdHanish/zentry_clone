@@ -146,7 +146,7 @@ export const Hero = () => {
                         <Button
                             id="watch-trailer"
                             title="Watch Trailer"
-                            leftIcon={<Navigation className="fill-black w-3 h-3 rotate-45" />}
+                            leftIcon={<Navigation className="fill-black text-black w-3 h-3 rotate-45" />}
                             containerClass="!bg-yellow-300 flex-center gap-2.5"
                         />
                     </div>
