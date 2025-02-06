@@ -36,9 +36,7 @@ export const Hero = () => {
                 duration: 1,
                 ease: "power1.inOut",
                 onStart: () => {
-                    if(nextVideoRef.current) {
-                        nextVideoRef.current.play();
-                    }
+                    nextVideoRef.current && nextVideoRef.current.play()
                 },
             });
 
@@ -74,9 +72,7 @@ export const Hero = () => {
     });
 
     useEffect(() => { 
-        if(loadedVideos === totalVideos - 1) {
-            setLoading(false);
-        }
+        if(loadedVideos === totalVideos - 1) setLoading(false);
     }, [loadedVideos]);
 
     const getVideoSrc = (index: number) => `/videos/hero-${index}.mp4`;
