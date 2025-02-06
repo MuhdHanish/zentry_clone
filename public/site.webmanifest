@@ -1,0 +1,19 @@
+{
+    "name": "Zentry Clone",
+    "short_name": "Zentry Clone",
+    "description": "A decentralized gaming metagame uniting AI and blockchain, enabling Web3-powered play-to-earn experiences.",
+    "icons": [
+        {
+            "src": "/favicon.svg",
+            "type": "image/x-icon"
+        }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "start_url": "/",
+    "scope": "/",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "related_applications": []
+}

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://zentry-clone-muhdhanish.vercel.app/sitemap.xml
