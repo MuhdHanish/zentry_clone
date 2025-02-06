@@ -105,6 +105,7 @@ export const Hero = () => {
                                 loop
                                 muted
                                 id="current-video"
+                                title="Current Video"
                                 className="size-64 origin-center scale-150 object-cover object-center"
                                 onLoadedData={handleVideoLoad}
                             />
@@ -117,6 +118,7 @@ export const Hero = () => {
                         loop
                         muted
                         id="next-video"
+                        title="Next Video"
                         className="absolute-center invisible absolute z-20 size-64 object-cover object-center"
                         onLoadedData={handleVideoLoad}
                     />
@@ -126,6 +128,7 @@ export const Hero = () => {
                         loop
                         muted
                         id="current-video"
+                        title="Current Video"
                         className="absolute left-0 top-0 size-full object-cover object-center"
                         onLoadedData={handleVideoLoad}
                     />
