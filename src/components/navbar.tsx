@@ -81,6 +81,7 @@ export const NavBar = () => {
                                         key={`${link}-${index}`}
                                         className="nav-hover-btn"
                                         href={`#${link?.toString()?.toLowerCase()}`}
+                                        title={link}
                                     >
                                         {link}
                                     </a>
