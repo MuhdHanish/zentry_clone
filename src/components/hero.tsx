@@ -59,12 +59,10 @@ export const Hero = () => {
     useGSAP(() => {
         gsap.set("#video-frame", {
             clipPath: "polygon(14% 0, 72% 0, 88% 90%, 0 95%)",
-            borderRadius: "0% 0% 40% 10%",
         });
         
         gsap.from("#video-frame", {
             clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-            borderRadius: "0% 0% 0% 0%",
             ease: "power1.inOut",
             scrollTrigger: {
                 trigger: "#video-frame",
@@ -146,8 +144,8 @@ export const Hero = () => {
                         <Button
                             id="watch-trailer"
                             title="Watch Trailer"
-                            leftIcon={<Navigation className="fill-black w-3 h-3" />}
-                            containerClass="!bg-yellow-300 flex-center gap-2"
+                            leftIcon={<Navigation className="fill-black w-3 h-3 rotate-45" />}
+                            containerClass="!bg-yellow-300 flex-center gap-2.5"
                         />
                     </div>
                 </div>
