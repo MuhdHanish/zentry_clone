@@ -26,16 +26,18 @@ export const About = () => {
 
     return (
         <div id="about" className="min-h-screen w-screen">
-            <div className="relatvie mb-8 mt-36 flex flex-col items-center gap-5">
-                <h2 className="font-general text-sm uppercase md:text-[10px]">
-                    Welcom to Zentry
-                </h2>
+            <div className="relative mb-8 mt-36 flex flex-col items-center gap-5">
+                <p className="font-general text-sm uppercase md:text-[10px]">
+                    Welcome to Zentry
+                </p>
                 <h1 className="hero-heading mt-5 text-center text-4xl uppercase leading-[0.8] md:text-[6rem] special-font">
                     Disc<b>o</b>ver the world's <br /> largest shared <b>a</b>dventure
                 </h1>
                 <div className="about-subtext">
-                    <p>The Metagame begins-your life, now an epic MMORPG</p>
-                    <p>Zentry is unified play layer that bridges players, agentic AI, and blockchains, creating a new conomic paradigm.</p>
+                    <p>The Metagame begins your life, now an epic MMORPG</p>
+                    <p className="text-gray-500">
+                        Zentry is a unified play layer that bridges players, agentic AI, and blockchains, creating a new economic paradigm.
+                    </p>
                 </div>
             </div>
             <div id="clip" className="h-dvh w-screen">
