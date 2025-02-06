@@ -64,7 +64,12 @@ export const NavBar = () => {
                         <Button
                             id="product-button"
                             title="Products"
-                            rightIcon={<img src="/img/play.svg" className="fill-black text-black w-3 h-3 rotate-[135deg] relative bottom-0.5" />}
+                            rightIcon={<img
+                                src="/img/play.svg"
+                                alt="arrow-icon"
+                                title="Arrow Icon"
+                                className="fill-black text-black w-3 h-3 rotate-[135deg] relative bottom-0.5"
+                            />}
                             containerClass="bg-blue-50 md:flex hidden items-center justify-center gap-1"
                         />
                     </div>

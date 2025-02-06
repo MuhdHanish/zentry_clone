@@ -141,7 +141,12 @@ export const Hero = () => {
                         <Button
                             id="watch-trailer"
                             title="Watch Trailer"
-                            leftIcon={<img src="/img/play.svg" className="fill-black text-black w-3 h-3 rotate-[45deg]" />}
+                            leftIcon={<img
+                                src="/img/play.svg"
+                                alt="arrow-icon"
+                                title="Arrow Icon"
+                                className="fill-black text-black w-3 h-3 rotate-[45deg]"
+                            />}
                             containerClass="!bg-yellow-300 flex-center gap-2.5"
                         />
                     </div>
