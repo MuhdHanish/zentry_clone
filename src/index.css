@@ -4,6 +4,18 @@
 @tailwind components;
 @tailwind utilities;
 
+*::-webkit-scrollbar {
+    display: none;
+}
+
+*::-webkit-scrollbar-track {
+    display: none;
+}
+
+*::-webkit-scrollbar-thumb {
+    display: none;
+}
+
 body {
     font-family: "General Sans", sans-serif;
     width: 100dvw;
