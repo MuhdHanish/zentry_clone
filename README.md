@@ -1,50 +1,80 @@
-# React + TypeScript + Vite
+![alt img](./public/img/intro.gif)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Zentry Clone
 
-Currently, two official plugins are available:
+A front-end project inspired by **Zentry**, built to explore **GSAP animations** and modern web technologies. This project is a conceptual recreation focusing on interactive animations, smooth transitions, and engaging user experiences.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **GSAP Animations** – Smooth, high-performance animations.
+- **Modular Components** – Clean and reusable code structure.
+- **Optimized for Performance** – Lightweight and responsive design.
+- **SEO & Open Graph Optimized** – Metadata for better search engine visibility.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Tech Stack
 
-- Configure the top-level `parserOptions` property like this:
+- **Vite** – Fast build tool for modern front-end development.
+- **React** – Component-based UI framework.
+- **GSAP** – GreenSock Animation Platform for fluid motion effects.
+- **Tailwind CSS** – Utility-first CSS for rapid styling.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Live Demo
+
+[https://zentry-clone-muhdhanish.vercel.app/](https://zentry-clone-muhdhanish.vercel.app/)
+
+## Installation
+
+Clone the repository and install dependencies:
+
+```sh
+git clone https://github.com/MuhdHanish/zentry_clone.git
+cd zentry-clone
+npm install
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Running the Project
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Start the development server:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```sh
+npm run dev
 ```
+
+Build for production:
+
+```sh
+npm run build
+```
+
+## Folder Structure
+
+```
+├── public/          # Static assets
+├── src/
+│   ├── components/  # Reusable UI components
+│   ├── utils/       # Utility functions
+│   ├── App.tsx      # Root component
+│   ├── index.css    # Global styles
+│   └── main.tsx     # Entry point
+├── index.html       # HTML template
+├── tailwind.config.js # Tailwind CSS configuration
+├── package.json     # Dependencies and scripts
+├── tsconfig.json    # TypeScript configuration
+└── vite.config.ts   # Vite configuration
+```
+
+## License
+
+This project is licensed under the **MIT License**.
+
+## Author
+
+[**Muhd Hanish**](https://github.com/MuhdHanish)
+
+## Feedback
+
+If you have any feedback, please reach me at [muhammedhanish11@gmail.com](mailto:muhammedhanish11@gmail.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/muhdhanish/).
+
+## Support
+
+Show your support by 🌟 the project!!
