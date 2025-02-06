@@ -101,11 +101,10 @@ export const Hero = () => {
                             <video
                                 ref={nextVideoRef}
                                 src={getVideoSrc(upcomingVideoIndex)}
-                                autoPlay
                                 loop
                                 muted
                                 id="current-video"
-                                title="Current Video"
+                                title="Upcoming Video"
                                 className="size-64 origin-center scale-150 object-cover object-center"
                                 onLoadedData={handleVideoLoad}
                             />
