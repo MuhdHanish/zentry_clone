@@ -1,9 +1,55 @@
-import { useRef } from "react";
+import gsap from "gsap";
 import { Button } from "./button";
 import { Navigation } from "lucide-react";
+import { useWindowScroll } from "react-use";
+import { useEffect, useRef, useState } from "react";
+
+const navItems = ["Nexus", "Vault", "Prologue", "About", "Contact"];
 
 export const NavBar = () => {
-    const navContainerRef = useRef(null);
+    const [lastScrollY, setLastScrollY] = useState(0);
+    const [isNavVisible, setIsNavVisible] = useState(true);
+
+    const [isAudioOn, setIsAudioOn] = useState(false);
+    const [isIndicatorOn, setIsIndicatorOn] = useState(false);
+
+    const navContainerRef = useRef<null | HTMLDivElement>(null);
+    const audioElementRef = useRef<null | HTMLAudioElement>(null);
+
+    const { y: currentScrollY } = useWindowScroll();
+
+    useEffect(() => {
+        if (currentScrollY === 0) {
+            setIsNavVisible(true);
+            navContainerRef.current && navContainerRef.current?.classList.remove("floating-nav");
+        } else if (currentScrollY > lastScrollY) {
+            setIsNavVisible(false);
+            navContainerRef.current && navContainerRef.current?.classList.add("floating-nav");
+        } else if (currentScrollY < lastScrollY) {
+            setIsNavVisible(true);
+            navContainerRef.current && navContainerRef.current?.classList.add("floating-nav");
+        }
+
+        setLastScrollY(currentScrollY);
+    }, [currentScrollY]);
+
+    useEffect(() => {
+        gsap.to(navContainerRef.current, {
+            y: isNavVisible ? 0 : -100,
+            opacity: isNavVisible ? 1 : 0,
+            duration: 0.2
+        });
+    }, [isNavVisible]);
+
+    const toggleAudioIndicator = () => {
+        setIsAudioOn(prev => !prev);
+        setIsIndicatorOn(prev => !prev);
+    }
+
+    useEffect(() => {
+        if (isAudioOn) audioElementRef.current && audioElementRef.current?.play();
+        else audioElementRef.current && audioElementRef.current?.pause();
+    }, [isAudioOn]);
 
     return (
         <div ref={navContainerRef} className="fixed inset-x-0 top-4 z-50 h-16 border-none transition-all duration-700 sm:inset-x-6">
@@ -22,6 +68,43 @@ export const NavBar = () => {
                             rightIcon={<Navigation className="text-black fill-black w-3 h-3 rotate-[136deg] -top-0.5 relative" />}
                             containerClass="bg-blue-50 md:flex hidden items-center justify-center gap-1"
                         />
+                    </div>
+                    <div className="flex h-full items-center">
+                        <div className="hidden md:block">
+                            {
+                                navItems?.map((link, index) => (
+                                    <a
+                                        key={`${link}-${index}`}
+                                        className="nav-hover-btn"
+                                        href={`#${link?.toString()?.toLowerCase()}`}
+                                    >
+                                        {link}
+                                    </a>
+                                ))
+                            }
+                        </div>
+                        <button
+                            id="audio-button"
+                            onClick={toggleAudioIndicator}
+                            className="ml-10 flex items-center space-x-0.5"
+                            type="button"
+                        >
+                            <audio
+                                ref={audioElementRef}
+                                className="hidden"
+                                src="/audio/loop.mp3"
+                                loop
+                            />
+                            {[1, 2, 3, 4].map((bar, index) => (
+                                <div
+                                    key={`${bar}-${index}`}
+                                    style={{
+                                        animationDelay: `${bar * 0.1}s`
+                                    }}
+                                    className={`indicator-line ${isIndicatorOn ? "active" : ""}`}
+                                />
+                            ))}
+                        </button>
                     </div>
                 </nav>
             </header>
