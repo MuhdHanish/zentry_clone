@@ -14,27 +14,27 @@ body {
 @layer base {
     @font-face {
         font-family: 'circular-web';
-        src: url('./fonts/circular-web.woff2') format('woff2');
+        src: url('/fonts/circular-web.woff2') format('woff2');
     }
 
     @font-face {
         font-family: 'general';
-        src: url('./fonts/general.woff2') format('woff2');
+        src: url('/fonts/general.woff2') format('woff2');
     }
 
     @font-face {
         font-family: 'robert-medium';
-        src: url('./fonts/robert-medium.woff2') format('woff2');
+        src: url('/fonts/robert-medium.woff2') format('woff2');
     }
 
     @font-face {
         font-family: 'robert-regular';
-        src: url('./fonts/robert-regular.woff2') format('woff2');
+        src: url('/fonts/robert-regular.woff2') format('woff2');
     }
 
     @font-face {
         font-family: 'zentry';
-        src: url('./fonts/zentry-regular.woff2') format('woff2');
+        src: url('/fonts/zentry-regular.woff2') format('woff2');
     }
 }
 
@@ -77,7 +77,7 @@ body {
     }
 
     .about-image {
-        @apply absolute left-1/2 top-0 z-20 h-[60vh] w-96 origin-center -translate-x-1/2 overflow-hidden rounded-3xl md:w-[30vw];
+        @apply absolute left-1/2 top-0 z-20 h-[60vh] w-96 origin-center -translate-x-1/2 overflow-hidden border border-black rounded-3xl md:w-[30vw];
     }
 
     .animated-title {

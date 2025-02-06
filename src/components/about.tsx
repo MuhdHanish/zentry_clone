@@ -21,6 +21,7 @@ export const About = () => {
             width: "100vw",
             height: "100vh",
             borderRadius: 0,
+            border: "none",
         });
     });
 
@@ -43,7 +44,7 @@ export const About = () => {
             <div id="clip" className="h-dvh w-screen">
                 <div className="mask-clip-path about-image">
                     <img
-                        src="./img/about.webp"
+                        src="/img/about.webp"
                         alt="about-background-image"
                         title="About Background Image"
                         className="absolute left-0 top-0 size-full object-cover"
