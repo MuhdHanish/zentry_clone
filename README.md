@@ -2,7 +2,7 @@
 
 # Zentry Clone
 
-A front-end project inspired by **Zentry**, built to explore **GSAP animations**,  **React**, **Tailwind CSS** and modern web technologies. This project is a conceptual recreation focusing on interactive animations, smooth transitions, and engaging user experiences.
+A front-end project inspired by **Zentry**, built to explore **GSAP animations**, **React**, **Tailwind CSS** and modern web technologies. This project is a conceptual recreation focusing on interactive animations, smooth transitions, and engaging user experiences.
 
 ## Features
 
@@ -20,7 +20,7 @@ A front-end project inspired by **Zentry**, built to explore **GSAP animations**
 
 ## Live Demo
 
-[https://zentry-clone-muhdhanish.vercel.app/](https://zentry-clone-muhdhanish.vercel.app/)
+[https://zentry-clone-muhdhanish.vercel.app](https://zentry-clone-muhdhanish.vercel.app)
 
 ## Installation
 
