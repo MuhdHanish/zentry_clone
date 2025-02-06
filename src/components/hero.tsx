@@ -2,7 +2,6 @@ import gsap from "gsap";
 import { Button } from "./button";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
-import { Navigation2 } from "lucide-react";
 import { useEffect, useRef, useState } from "react"
 
 gsap.registerPlugin(ScrollTrigger);
@@ -142,7 +141,7 @@ export const Hero = () => {
                         <Button
                             id="watch-trailer"
                             title="Watch Trailer"
-                            leftIcon={<Navigation2 className="fill-black text-black w-3 h-3 rotate-90" />}
+                            leftIcon={<img src="/img/play.svg" className="fill-black text-black w-3 h-3 rotate-[45deg]" />}
                             containerClass="!bg-yellow-300 flex-center gap-2.5"
                         />
                     </div>
