@@ -1,6 +1,6 @@
 import gsap from "gsap";
 import { Button } from "./button";
-import { Navigation } from "lucide-react";
+import { Navigation2 } from "lucide-react";
 import { useWindowScroll } from "react-use";
 import { useEffect, useRef, useState } from "react";
 
@@ -65,7 +65,7 @@ export const NavBar = () => {
                         <Button
                             id="product-button"
                             title="Products"
-                            rightIcon={<Navigation className="text-black fill-black w-3 h-3 rotate-[136deg] -top-0.5 relative" />}
+                            rightIcon={<Navigation2 className="text-black fill-black w-3 h-2.5 rotate-180 relative" />}
                             containerClass="bg-blue-50 md:flex hidden items-center justify-center gap-1"
                         />
                     </div>

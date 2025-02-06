@@ -2,7 +2,7 @@ import gsap from "gsap";
 import { Button } from "./button";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
-import { Navigation } from "lucide-react";
+import { Navigation2 } from "lucide-react";
 import { useEffect, useRef, useState } from "react"
 
 gsap.registerPlugin(ScrollTrigger);
@@ -22,8 +22,8 @@ export const Hero = () => {
         setCurrentIndex(upcomingVideoIndex);
     };
 
-    useGSAP(() => { 
-        if(hasClicked) {
+    useGSAP(() => {
+        if (hasClicked) {
             gsap.set("#next-video", {
                 visibility: "visible"
             });
@@ -58,7 +58,7 @@ export const Hero = () => {
         gsap.set("#video-frame", {
             clipPath: "polygon(14% 0, 72% 0, 88% 90%, 0 95%)",
         });
-        
+
         gsap.from("#video-frame", {
             clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
             ease: "power1.inOut",
@@ -71,8 +71,8 @@ export const Hero = () => {
         });
     });
 
-    useEffect(() => { 
-        if(loadedVideos === totalVideos - 1) setLoading(false);
+    useEffect(() => {
+        if (loadedVideos === totalVideos - 1) setLoading(false);
     }, [loadedVideos]);
 
     const getVideoSrc = (index: number) => `/videos/hero-${index}.mp4`;
@@ -142,7 +142,7 @@ export const Hero = () => {
                         <Button
                             id="watch-trailer"
                             title="Watch Trailer"
-                            leftIcon={<Navigation className="fill-black text-black w-3 h-3 rotate-45" />}
+                            leftIcon={<Navigation2 className="fill-black text-black w-3 h-3 rotate-90" />}
                             containerClass="!bg-yellow-300 flex-center gap-2.5"
                         />
                     </div>
