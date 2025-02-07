@@ -1,9 +1,12 @@
 import {
-  Hero,
-  About,
   NavBar,
-  Features
 } from "./components"
+
+import {
+  About,
+  Hero,
+  Features,
+} from "./components/sections"
 
 export const App = () => {
   return (

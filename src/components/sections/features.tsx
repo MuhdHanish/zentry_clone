@@ -1,4 +1,4 @@
-import { getTextFromReactNode } from "../utils";
+import { getTextFromReactNode } from "../../utils";
 import React, { MouseEvent, useRef, useState } from "react";
 
 const BentoCard = ({
