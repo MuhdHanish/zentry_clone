@@ -36,7 +36,7 @@ export const About = () => {
                     title="Disc<b>o</b>ver the world's <br /> largest shared <b>a</b>dventure"
                     containerClass="hero-heading mt-5 text-center text-4xl uppercase leading-[0.8] md:text-[6rem] special-font !text-black"
                 />
-                <div className="about-subtext">
+                <div className="about-subtext -mb-14 md:-mb-0">
                     <h5>The Metagame begins—your life, now an epic MMORPG</h5>
                     <p className="text-gray-500 text-base">
                         Zentry is a unified play layer that bridges players, agentic AI, and blockchains, creating a new economic paradigm.
