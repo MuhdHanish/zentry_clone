@@ -44,7 +44,7 @@ const BentoCard = ({
             />
             <div className="relative z-10 flex size-full flex-col justify-between p-5 text-blue-50">
                 <div>
-                    <h2 className="bento-title special-font">{title}</h2>
+                    <h3 className="bento-title special-font">{title}</h3>
                     {description && (
                         <p className="mt-3 max-w-64 text-xs md:text-sm">{description}</p>
                     )}
@@ -102,7 +102,7 @@ export const Features = () => {
         <section className="bg-black pb-52">
             <div className="container mx-auto px-5 md:px-10">
                 <div className="px-5 py-32 font-robert-regular text-blue-50">
-                    <h3 className="text-lg">Explore the Zentry Universe</h3>
+                    <h5 className="text-lg">Explore the Zentry Universe</h5>
                     <p className="max-w-md opacity-50 text-sm md:text-base">
                         Immerse yourself in an IP-rich product universe where AI-driven gamification and hyper-personalization lead humans & AI into a global play economy.
                     </p>
