@@ -23,7 +23,7 @@ export const Button = ({
         >
 
             {leftIcon && leftIcon}
-            <span className="relative inline-flex overflow-hidden font-general text-xs uppercase">
+            <span className="relative inline-flex overflow-hidden font-general text-xs uppercase font-medium">
                 {title}
             </span>
             {rightIcon && rightIcon}
