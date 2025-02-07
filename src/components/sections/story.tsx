@@ -77,7 +77,7 @@ export const Story = () => {
                         <RoundedCorners />
                     </div>
                 </div>
-                <div className="-mt-40 sm:-mt-32 md:-mt-64 md:me-44 flex w-full justify-center md:justify-end">
+                <div className="-mt-40 sm:-mt-32 md:-mt-64 md:me-44 flex w-full justify-center md:justify-end mb-10">
                     <div className="flex h-full w-fit flex-col items-center md:items-start">
                         <p className="text-sm md:text-base mt-4 max-w-sm text-center md:text-start font-robert-regular text-violet-50">
                             Where realms converge, lies Zentry and the boundless pillar. Discover its secrets and shape your fate amidst infinite opportunities.
