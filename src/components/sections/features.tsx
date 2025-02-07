@@ -99,7 +99,7 @@ const BentoTilt = ({
 
 export const Features = () => {
     return (
-        <section className="bg-black pb-52">
+        <section id="features" className="bg-black pb-52">
             <div className="container mx-auto px-5 md:px-10">
                 <div className="px-5 py-32 font-robert-regular text-blue-50">
                     <h5 className="text-lg">Explore the Zentry Universe</h5>

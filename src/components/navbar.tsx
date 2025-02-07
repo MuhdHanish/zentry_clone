@@ -3,7 +3,7 @@ import { Button } from "./button";
 import { useWindowScroll } from "react-use";
 import { useEffect, useRef, useState } from "react";
 
-const navItems = ["Nexus", "Vault", "Prologue", "About", "Contact"];
+const navItems = ["About", "Features", "Story", "Contact"];
 
 export const NavBar = () => {
     const [lastScrollY, setLastScrollY] = useState(0);
