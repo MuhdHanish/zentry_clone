@@ -1,5 +1,6 @@
 import {
   NavBar,
+  Footer,
 } from "./components"
 
 import {
@@ -7,6 +8,7 @@ import {
   About,
   Features,
   Story,
+  Contact,
 } from "./components/sections"
 
 export const App = () => {
@@ -17,6 +19,8 @@ export const App = () => {
       <About />
       <Features /> 
       <Story />
+      <Contact />
+      <Footer />
     </main>
   )
 }
