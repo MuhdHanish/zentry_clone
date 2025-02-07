@@ -3,9 +3,10 @@ import {
 } from "./components"
 
 import {
-  About,
   Hero,
+  About,
   Features,
+  Story,
 } from "./components/sections"
 
 export const App = () => {
@@ -15,6 +16,7 @@ export const App = () => {
       <Hero />
       <About />
       <Features /> 
+      <Story />
     </main>
   )
 }
