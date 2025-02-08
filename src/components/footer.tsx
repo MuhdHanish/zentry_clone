@@ -43,7 +43,7 @@ export const Footer = () => {
                             href={link?.href}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-2xl hover:translate-x-1 hover:-translate-y-1 translate-x-0 translate-y-0 hover:text-blue-50 duration-500 transition-all ease-in-out hover:drop-shadow-[0_5px_10px_rgba(255,255,255,0.5)]"
+                            className="text-2xl hover:text-blue-50 duration-500 transition-all ease-in-out hover:drop-shadow-[0_5px_10px_rgba(255,255,255,0.5)]"
                         >
                             {link?.icon}
                         </a>
